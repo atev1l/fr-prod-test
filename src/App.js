@@ -34,10 +34,10 @@ function App() {
 
   const loginForm = (
     <div className="form__container mb-3 bg-light">
-      <label htmlFor="exampleFormControlInput1" className="form-label">Имя пользователя</label>
-      <input onChange={e => setState({ ...state, username: e.target.value })} type="text" className="form-control" id="form-username" placeholder="Введите имя" />
+      <label htmlFor="exampleFormControlInput1" className="form-label text">Имя пользователя</label>
+      <input onChange={e => setState({ ...state, username: e.target.value })} type="text" className="form-control text" id="form-username" placeholder="Введите имя" />
       <div className="d-flex w-100 justify-content-end">
-        <button type="button" className="btn mt-3 btn-primary" onClick={() => handleSetNickname()}>
+        <button type="button" className="btn mt-3 btn-primary text" onClick={() => handleSetNickname()}>
           Войти
         </button>
       </div>
@@ -46,7 +46,7 @@ function App() {
 
   const sending = (
     <div className="d-flex mt-2">
-      <input value={state.message} onKeyDown={handleKeyDown} onChange={e => setState({ ...state, message: e.target.value })} type="text" className="form-control" id="form-message" placeholder="Напишите сообщение" />
+      <input value={state.message} onKeyDown={handleKeyDown} onChange={e => setState({ ...state, message: e.target.value })} type="text" className="form-control text_msg" id="form-message" placeholder="Напишите сообщение" />
       <button type="button" className="btn-sent" onClick={() => sendMessage()}>
         <img className="icon__container" alt="sent" src="/sent.png"/>
       </button>
@@ -57,8 +57,8 @@ function App() {
     <div className="messages__container">
       {dataChat.length ? dataChat.map((item, index) => (
         <div className={`message__item ${state.username === item.username ? 'self' : ''}`} id={`${index}`}>
-          <div className="message">
-            <div className="username">{item.username}</div>
+          <div className="message text_msg">
+            <div className="username text_msg">{item.username}</div>
             {item.message}
           </div>
         </div>

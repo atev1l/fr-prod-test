@@ -56,16 +56,22 @@
 
 @media (max-width: 450px) {
   .main{
-    margin-top: 15vh;
+    margin-top: 5vh;
+  }
+  .text{
+    font-size: 14px !important;
   }
 
+  .text_msg{
+    font-size: 12px !important;
+  }
   .messages__container{
-    max-height: 600px;
+    max-height: 30rem;
   }
 
   .form__container{
     border-radius: 10px;
-    width: 30rem;
+    width: 40rem;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
