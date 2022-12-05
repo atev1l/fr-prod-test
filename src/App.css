@@ -1,0 +1,72 @@
+.main{
+  margin-top: 25vh;
+}
+.main__container{
+  padding: 2.7778rem;
+  width: 48.6111rem;
+  max-width: 55.5556rem;
+  border-radius: 20px;
+  background: #252D39;
+}
+
+.form__container{
+  padding: 1.3889rem;
+  border-radius: 20px;
+  width: 20rem;
+}
+
+.messages__container{
+  height: 100vh;
+  max-height: 27.7778rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+}
+
+.message{
+  display: inline-block;
+  max-width: 23.6111rem;
+  padding: 0.6944rem 1.3889rem;
+  margin-bottom: 0.6944rem;
+
+  background: white;
+  border-radius: 10px;
+  word-break: break-word;
+}
+
+.username{
+  color: #3dd7ab;
+  font-size: 0.9722rem;
+}
+
+.self{
+  margin-left: auto;
+  margin-right: 0.6944rem;
+}
+
+.btn-sent{
+  border: none;
+  background: none;
+}
+.icon__container{
+  width: 3.3333rem;
+  height: 3.3333rem;
+}
+
+@media (max-width: 450px) {
+  .main{
+    margin-top: 15vh;
+  }
+
+  .messages__container{
+    max-height: 600px;
+  }
+
+  .form__container{
+    border-radius: 10px;
+    width: 30rem;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+}
