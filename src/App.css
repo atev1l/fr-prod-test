@@ -69,6 +69,10 @@
     max-height: 30rem;
   }
 
+  .main__container{
+    border-radius: 10px;
+  }
+
   .form__container{
     border-radius: 10px;
     width: 40rem;
